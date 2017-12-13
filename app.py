@@ -8,4 +8,6 @@ api = Api('https://news.ycombinator.com/', settings=MySettings)
 api.register(User)
 api.register(Page)
 api.register(Post)
-api.serve(ip='0.0.0.0', port=5000)
+
+if __name__ == '__main__':
+  api.serve()
