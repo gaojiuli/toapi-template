@@ -1,13 +1,15 @@
-from toapi.settings import Settings
-
-
 import os
 
 from toapi.cache import MemoryCache
+from toapi.settings import Settings
 
 
-class MySettings:
-    """Global Settings"""
+class MySettings(Settings):
+    """
+    Create custom configuration
+    http://www.toapi.org/topics/settings/
+    """
+
     cache = {
         'cache_class': MemoryCache,
         'cache_config': {},
@@ -23,4 +25,3 @@ class MySettings:
         "request_config": {},
         "headers": None
     }
-
