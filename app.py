@@ -8,4 +8,4 @@ api.register(Page)
 api.register(Post)
 
 if __name__ == '__main__':
-  api.serve()
+    api.serve()
