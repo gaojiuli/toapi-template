@@ -7,5 +7,4 @@ class Post(Item):
 
     class Meta:
         source = XPath('//tr[@class="athing"]')
-        route = '/news?p=:page'
-        alias = '/posts?page=:page'
+        route = {'/posts?page=:page': '/news?p=:page'}

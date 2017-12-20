@@ -6,5 +6,4 @@ class Page(Item):
 
     class Meta:
         source = None
-        route = '/news?p=:page'
-        alias = '/posts?page=:page'
+        route = {'/posts?page=:page': '/news?p=:page'}
